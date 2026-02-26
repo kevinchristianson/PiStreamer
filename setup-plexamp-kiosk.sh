@@ -197,6 +197,7 @@ exec bash -c 'until curl -s http://localhost:32500 > /dev/null; do sleep 1; done
     --no-first-run \\\\
     --touch-events=enabled \\\\
     --enable-features=UseOzonePlatform,WaylandTextInputV3 \\\\
+    --disable-features=WakeLock \\\\
     --ozone-platform=wayland \\\\
     --enable-wayland-ime \\\\
     --app=http://localhost:32500'
